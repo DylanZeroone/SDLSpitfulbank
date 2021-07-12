@@ -9,7 +9,7 @@ public class RandomGenorationPaperwork : MonoBehaviour
 
     public GameObject paperworkOneGood;
     public GameObject paperworkTwoGood;
-    public GameObject paperworkThreeGood;
+   
 
     public GameObject paperworkOneBad;
     public GameObject paperworkTwoBad;
@@ -41,6 +41,11 @@ public class RandomGenorationPaperwork : MonoBehaviour
              Debug.Log("RESET");
 
          }
+
+        paperworkOneGood.SetActive(false);
+        paperworkTwoGood.SetActive(false);
+        paperworkOneBad.SetActive(false);
+        paperworkTwoBad.SetActive(false);
 
     }
 
@@ -85,25 +90,26 @@ public class RandomGenorationPaperwork : MonoBehaviour
         if (paperworkOneSelection == 0)
         {
             Debug.Log("paperworkOneGood");
-
+            paperworkOneGood.SetActive(true);
         }
 
         if (paperworkOneSelection == 1)
         {
             Debug.Log("paperworkOneBad");
+            paperworkOneBad.SetActive(true);
 
         }
 
         if (paperworkTwoSelection == 0)
         {
             Debug.Log("paperworkTwoGood");
-
+            paperworkTwoGood.SetActive(true);
         }
 
         if (paperworkTwoSelection == 1)
         {
             Debug.Log("paperworkTwoBad");
-
+            paperworkTwoBad.SetActive(true);
         }
 
 
