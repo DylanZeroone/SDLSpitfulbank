@@ -16,6 +16,8 @@ public class RandomGenorationPaperwork : MonoBehaviour
 
     public bool paperworkIsWrong;
 
+    public bool isTalking;
+
 
 
     public void Start()
@@ -44,6 +46,8 @@ public class RandomGenorationPaperwork : MonoBehaviour
 
     public void Newcharacter()
     {
+        isTalking = true;
+
         ResetPaperworkAndCharacters();
 
         int characterSelection = Random.Range(0, characters.Length);

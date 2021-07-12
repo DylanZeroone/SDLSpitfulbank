@@ -11,6 +11,7 @@ public class DenyOrAccptLoanScript : MonoBehaviour
     public float chaosPoints;
 
     public float pointsAdded = 10;
+    public float pointsTaken = 20;
 
     public void Start()
     {
@@ -25,13 +26,16 @@ public class DenyOrAccptLoanScript : MonoBehaviour
             chaosPoints += pointsAdded;
 
             UpdateChaosText();
+
+            gameObject.GetComponent<RandomGenorationPaperwork>().isTalking = false;
         }
 
         if (gameObject.GetComponent<RandomGenorationPaperwork>().paperworkIsWrong == false)
         {
-            chaosPoints -= pointsAdded;
+            chaosPoints -= pointsTaken;
 
             UpdateChaosText();
+            gameObject.GetComponent<RandomGenorationPaperwork>().isTalking = false;
         }
 
     }
@@ -40,9 +44,10 @@ public class DenyOrAccptLoanScript : MonoBehaviour
     {
         if (gameObject.GetComponent<RandomGenorationPaperwork>().paperworkIsWrong == true)
         {
-            chaosPoints -= pointsAdded;
+            chaosPoints -= pointsTaken;
 
             UpdateChaosText();
+            gameObject.GetComponent<RandomGenorationPaperwork>().isTalking = false;
         }
 
         if (gameObject.GetComponent<RandomGenorationPaperwork>().paperworkIsWrong == false)
@@ -50,6 +55,7 @@ public class DenyOrAccptLoanScript : MonoBehaviour
             chaosPoints += pointsAdded;
 
             UpdateChaosText();
+            gameObject.GetComponent<RandomGenorationPaperwork>().isTalking = false;
         }
 
     }
