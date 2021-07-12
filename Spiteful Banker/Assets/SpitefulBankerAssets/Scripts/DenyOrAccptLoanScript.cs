@@ -11,7 +11,7 @@ public class DenyOrAccptLoanScript : MonoBehaviour
     public float chaosPoints;
 
     public float pointsAdded = 10;
-    public float pointsTaken = 20;
+    public float pointsTaken = 50;
 
     public void Start()
     {
