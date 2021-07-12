@@ -14,7 +14,7 @@ public class RandomGenorationPaperwork : MonoBehaviour
     public GameObject paperworkOneBad;
     public GameObject paperworkTwoBad;
 
-    private bool _paperworkIsWrong;
+    public bool paperworkIsWrong;
 
 
 
@@ -54,25 +54,25 @@ public class RandomGenorationPaperwork : MonoBehaviour
 
         if (paperworkOneSelection == 0 && paperworkTwoSelection == 0)
         {
-            _paperworkIsWrong = false;
+            paperworkIsWrong = false;
             Debug.Log("everything is good");
         }
 
         if (paperworkOneSelection == 1 && paperworkTwoSelection == 0)
         {
-            _paperworkIsWrong = true;
+            paperworkIsWrong = true;
             Debug.Log("everything is bad");
         }
 
         if (paperworkOneSelection == 0 && paperworkTwoSelection == 1)
         {
-            _paperworkIsWrong = true;
+            paperworkIsWrong = true;
             Debug.Log("everything is bad");
         }
 
         if (paperworkOneSelection == 1 && paperworkTwoSelection == 1)
         {
-            _paperworkIsWrong = true;
+            paperworkIsWrong = true;
             Debug.Log("everything is bad");
         }
 
