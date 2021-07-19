@@ -10,6 +10,12 @@ public class PlayerHasSomeoneInTheRoom : MonoBehaviour
     public GameObject acceptButton;
     public GameObject dennyButton;
 
+    public void Start()
+    {
+        acceptButton.SetActive(false);
+        dennyButton.SetActive(false);
+    }
+
     public void TalkingToSomeone()
     {
         if (gameObject.GetComponent<RandomGenorationPaperwork>().isTalking == true)
