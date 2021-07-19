@@ -14,6 +14,12 @@ public class RandomGenorationPaperwork : MonoBehaviour
     public GameObject paperworkOneBad;
     public GameObject paperworkTwoBad;
 
+    public Animator paperworkAnimation;
+    public Animator characterAnimation;
+
+    public string charecterAnimationTrigger;
+    public string paperworkAnimationTrigger;
+
     public bool paperworkIsWrong;
 
     public bool isTalking;
@@ -111,7 +117,10 @@ public class RandomGenorationPaperwork : MonoBehaviour
             Debug.Log("paperworkTwoBad");
             paperworkTwoBad.SetActive(true);
         }
+        characterAnimation.SetTrigger(charecterAnimationTrigger);
+        paperworkAnimation.SetTrigger(paperworkAnimationTrigger);
 
+        
 
     }
 }
