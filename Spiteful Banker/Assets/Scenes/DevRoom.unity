@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d25dea37dc42e4c997cc5cb4b96d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 120
+  time: 20
   timeText: {fileID: 747633088}
   timesUp:
     m_PersistentCalls:
@@ -476,9 +476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3d5516875d5284e921e3187c027b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positiveScoreScene: DevRoom
-  negetiveScoreScene: SampleScene
-  zeroScoreScene: DevRoom
+  positiveScoreScene: DevRoom2
+  negetiveScoreScene: DevRoom2
+  zeroScoreScene: SampleScene
 --- !u!1 &454879703
 GameObject:
   m_ObjectHideFlags: 0
