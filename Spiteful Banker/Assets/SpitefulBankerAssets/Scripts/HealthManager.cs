@@ -1,18 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class HealthManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Range(0, 50)] public float health;
+    public UnityEvent onDeath;
+    public TextMeshProUGUI healthText;
+    public void Start()
     {
-        
+        health = 50;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(float _damage)
     {
-        
+        health -= _damage;
+        HandelDeath();
+    }
+    void HandelDeath()
+    {
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        onDeath.Invoke();
     }
 }
