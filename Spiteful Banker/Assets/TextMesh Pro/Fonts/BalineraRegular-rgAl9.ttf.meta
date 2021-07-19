@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 17b81937db9f448ec96497b09580a159
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Balinera
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 71bce60b47d724c16897f502b26f742f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
