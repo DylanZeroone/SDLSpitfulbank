@@ -117,7 +117,7 @@ public class RandomGenorationPaperwork : MonoBehaviour
             Debug.Log("paperworkTwoBad");
             paperworkTwoBad.SetActive(true);
         }
-        characterAnimation.SetTrigger(charecterAnimationTrigger);
+        //characterAnimation.SetTrigger(charecterAnimationTrigger);
         paperworkAnimation.SetTrigger(paperworkAnimationTrigger);
 
         
