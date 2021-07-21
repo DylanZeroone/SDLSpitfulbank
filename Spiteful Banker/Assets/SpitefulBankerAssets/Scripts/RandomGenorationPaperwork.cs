@@ -44,7 +44,7 @@ public class RandomGenorationPaperwork : MonoBehaviour
         foreach (GameObject Charecter in characters)
           {
              Charecter.SetActive(false);
-             Debug.Log("RESET");
+            // Debug.Log("RESET");
 
          }
 
@@ -70,54 +70,54 @@ public class RandomGenorationPaperwork : MonoBehaviour
         if (paperworkOneSelection == 0 && paperworkTwoSelection == 0)
         {
             paperworkIsWrong = false;
-            Debug.Log("everything is good");
+          //  Debug.Log("everything is good");
         }
 
         if (paperworkOneSelection == 1 && paperworkTwoSelection == 0)
         {
             paperworkIsWrong = true;
-            Debug.Log("everything is bad");
+           // Debug.Log("everything is bad");
         }
 
         if (paperworkOneSelection == 0 && paperworkTwoSelection == 1)
         {
             paperworkIsWrong = true;
-            Debug.Log("everything is bad");
+           // Debug.Log("everything is bad");
         }
 
         if (paperworkOneSelection == 1 && paperworkTwoSelection == 1)
         {
             paperworkIsWrong = true;
-            Debug.Log("everything is bad");
+           // Debug.Log("everything is bad");
         }
 
         characters[characterSelection].SetActive(true);
 
         if (paperworkOneSelection == 0)
         {
-            Debug.Log("paperworkOneGood");
+           // Debug.Log("paperworkOneGood");
             paperworkOneGood.SetActive(true);
         }
 
         if (paperworkOneSelection == 1)
         {
-            Debug.Log("paperworkOneBad");
+            //Debug.Log("paperworkOneBad");
             paperworkOneBad.SetActive(true);
 
         }
 
         if (paperworkTwoSelection == 0)
         {
-            Debug.Log("paperworkTwoGood");
+           // Debug.Log("paperworkTwoGood");
             paperworkTwoGood.SetActive(true);
         }
 
         if (paperworkTwoSelection == 1)
         {
-            Debug.Log("paperworkTwoBad");
+
             paperworkTwoBad.SetActive(true);
         }
-        //characterAnimation.SetTrigger(charecterAnimationTrigger);
+        characterAnimation.SetTrigger(charecterAnimationTrigger);
         paperworkAnimation.SetTrigger(paperworkAnimationTrigger);
 
         

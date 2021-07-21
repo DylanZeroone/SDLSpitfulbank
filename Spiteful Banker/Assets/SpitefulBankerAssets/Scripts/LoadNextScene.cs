@@ -18,19 +18,19 @@ public class LoadNextScene : MonoBehaviour
         {
             
             SceneManager.LoadScene(positiveScoreScene);
-            Debug.Log("+");
+
         }
 
         if (gameObject.GetComponent<DenyOrAccptLoanScript>().chaosPoints == 0)
         {
-            SceneManager.LoadScene(positiveScoreScene);
-            Debug.Log("why");
+            SceneManager.LoadScene(zeroScoreScene);
+
         }
 
         if (gameObject.GetComponent<DenyOrAccptLoanScript>().chaosPoints < 0)
         {
             SceneManager.LoadScene(negetiveScoreScene);
-            Debug.Log("-");
+
         }
     }
 

@@ -712,6 +712,8 @@ GameObject:
   m_Component:
   - component: {fileID: 114134810}
   - component: {fileID: 114134809}
+  - component: {fileID: 114134812}
+  - component: {fileID: 114134811}
   m_Layer: 0
   m_Name: MainMenuManager
   m_TagString: Untagged
@@ -749,6 +751,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114134811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114134808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013d7e08211035146a8ee4791ea24a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114134812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114134808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711688622fef04c408ccf418a8cf8162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &124943603
 GameObject:
   m_ObjectHideFlags: 0
@@ -6776,7 +6802,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1888850925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114134812}
+        m_TargetAssemblyTypeName: SceneButtonChange, Assembly-CSharp
+        m_MethodName: LoadNewScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Functionality
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1888850925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7630,7 +7668,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2131618810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114134811}
+        m_TargetAssemblyTypeName: ExitScript, Assembly-CSharp
+        m_MethodName: doExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2131618810
 MonoBehaviour:
   m_ObjectHideFlags: 0
