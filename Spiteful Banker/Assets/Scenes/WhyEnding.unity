@@ -263,7 +263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 2c10cb669ce09344b97ccd66e60e0982, type: 2}
+  m_Texture: {fileID: 8400000, guid: d74f8103afcdd66499c23c5223efb830, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -406,11 +406,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264627526}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 16ee8e907696d3d47a46f0f24faffa53, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 24fce3d8ac6b3e54eb009adbcced170f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 2c10cb669ce09344b97ccd66e60e0982, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: d74f8103afcdd66499c23c5223efb830, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1f6fdbecd3c5848a88d807b7878274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 29
-  waitShowText: 16
-  waitHideText: 2.5
+  waitTime: 27
+  waitShowText: 0
+  waitHideText: 0
   score: {fileID: 1851044116}
   MainMenuName: MainMenu
 --- !u!114 &1264627530
